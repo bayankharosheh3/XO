@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #222;
+  color: #800e13;
+  letter-spacing: 2px;
+  font-family: "Fredoka One", cursive;
+}
+
+section{
+    position: relative;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  background-color: #721121;
+  text-align: center;
+  height: 100vh;
+}
+
+.header .row {
+  padding: 4%;
+}
+
+.playerInfo {
+  width: 12%;
+  margin: 0px 5%;
+}
+
+.playerInfo .col {
+  background-color: #ffd97d;
+  border-radius: 10%;
+  padding: 20px 15px;
+  margin-bottom: 10px;
+}
+
+.playerName {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.xo {
+  font-size: 16px;
+  padding: 3px 15px;
+  background-color: #b23a48;
+  border-radius: 10%;
+  color: #edf2f4;
+  font-family: "Satisfy", cursive;
+}
+
+.selected {
+  box-shadow: 1px 1px 20px white;
+  border-radius: 12%;
+}
+
+.timesWon,
+.draw {
+  text-align: center;
+  color: #edf2f4;
+}
+
+.roundNum .col {
+  width: 80px;
+  height: 80px;
+  font-size: 13px;
+  background-color: #9caea4;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  padding: 4px;
+}
+
+#roundNumber {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.game {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.box {
+  height: 120px;
+  width: 180px;
+  border-right: 3px #f6bd60 solid;
+  border-bottom: 3px #f6bd60 solid;
+  color: #edf2f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-family: "Satisfy", cursive;
+}
+
+.box:nth-child(3) {
+  border-right: 0px;
+}
+
+.row:nth-child(3) .box {
+  border-bottom: 0px;
+}
+
+.resetBtn {
+  padding: 10px 20px;
+  background-color: #f6bd60;
+  color: #721121;
+  font-size: 14px;
+  font-weight: 600;
+  border: 0;
+}
+
+#winnerBox {
+  color: #edf2f4;
+  font-family: "Satisfy", cursive;
+  font-weight: 600;
+  font-size: 40px;
+  background-color: #222;
+  padding: 20px 40px;
+}
+
+#layer {
+  background-color: #393c3d3c;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .playerInfo {
+    width: 12%;
+  }
+  .playerInfo .col {
+    padding: 10px 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 80%;
+    padding: 50px 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 50px 0px;
+  }
+  .playerInfo {
+    width: 15%;
+  }
+  .box {
+    height: 100px;
+    width: 150px;
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .playerInfo {
+    width: 15%;
+  }
+  .box {
+    height: 80px;
+    width: 120px;
+    font-size: 55px;
+  }
+
+  .playerInfo {
+    width: 15%;
+    margin: 0px 5%;
+  }
+
+  .playerInfo .col {
+    padding: 20px 15px;
+  }
+
+  .playerName {
+    font-size: 13px;
+  }
+
+  .xo {
+    font-size: 14px;
+    padding: 2px 13px;
+  }
+
+  .roundNum .col {
+    width: 70px;
+    height: 70px;
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .timesWon,
+  .draw {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 435px) {
+  .playerInfo {
+    width: 15%;
+  }
+  .box {
+    height: 75px;
+    width: 90px;
+    font-size: 40px;
+  }
+
+  .playerInfo {
+    width: 20%;
+    margin: 0px 5%;
+  }
+
+  .playerInfo .col {
+    padding: 20px 15px;
+  }
+
+  .playerName {
+    font-size: 11px;
+  }
+
+  .xo {
+    font-size: 12px;
+    padding: 2px 10px;
+  }
+
+  .roundNum .col {
+    width: 60px;
+    height: 60px;
+    font-size: 10px;
+    padding: 5px;
+  }
+}

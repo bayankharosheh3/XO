@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XO Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div id="layer">
+        <div id="winnerBox">The Winner is <span id="winnerName"></span></div>
+      </div>
+      <div class="container">
+        <div class="header">
+          <div class="row">
+            <div class="playerInfo">
+              <div class="col" id="player1">
+                <h2 class="playerName">Player 1</h2>
+                <div class="xo">X</div>
+              </div>
+              <div class="timesWon">Won: <span id="player1Won">0</span></div>
+            </div>
+
+            <div class="roundNum">
+              <div class="col">
+                <div class="Num">Round#: <span id="roundNumber">0</span></div>
+              </div>
+              <div class="draw">Draw: <span id="drawTimes">0</span></div>
+            </div>
+
+            <div class="playerInfo">
+              <div class="col" id="player2">
+                <h2 class="playerName">Player 2</h2>
+                <div class="xo">O</div>
+              </div>
+              <div class="timesWon">Won: <span id="player2Won">0</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="game col">
+          <div class="col">
+            <div class="row">
+              <div class="box" id="0"></div>
+              <div class="box" id="1"></div>
+              <div class="box" id="2"></div>
+            </div>
+            <div class="row">
+              <div class="box" id="3"></div>
+              <div class="box" id="4"></div>
+              <div class="box" id="5"></div>
+            </div>
+            <div class="row">
+              <div class="box" id="6"></div>
+              <div class="box" id="7"></div>
+              <div class="box" id="8"></div>
+            </div>
+          </div>
+        </div>
+        <button class="resetBtn" id="reset">Reset</button>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
