@@ -4,4 +4,4 @@ This is a simple web-based XO game built using JavaScript, HTML, and CSS. It's d
 
 ## Deployment
 You can play the game by visiting the following link: 
-https://bayankharosheh3.github.io/XO/
+https://bayankharosheh3.github.io/XO-JS/
